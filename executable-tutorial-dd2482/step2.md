@@ -89,10 +89,11 @@ public:
 You can save the file and exit vim by first pressing the `esc` button, then type `:wq` and press `enter`.
 
 ## Writing the implementation file
-Now lets write the code for all the functions we just created. Open the implementation file in vim using `vim complex.cpp` when vim has opened press `i` to start editing the file. The first thing we need to add to the implementation file is the header file, this is done using the `#include <file>` command which tells the compiler at compile time to copy and paste the content of the `<file>` into the file where `#include <file>` was used. So add the following code to the top of the `Complex.cpp` file.
+Now lets write the code for all the functions we just created. Open the implementation file in vim using `vim complex.cpp` when vim has opened press `i` to start editing the file. The first thing we need to add to the implementation file is the header file, this is done using the `#include <file>` command which tells the compiler at compile time to copy and paste the content of the `<file>` into the file where `#include <file>` was used. The iostream has an abs function defined in it that we will use later. So add the following code to the top of the `Complex.cpp` file.
 
 ```c++
 #include "complex.h"
+#include "iostream"
 ```
 
 Lets start by defining our member functions. Lets start with the `Complex& operator=(const Complex& comp)` function. Add the following code snippet:
@@ -146,6 +147,7 @@ There are different ways of overloading these operators but doing it this way wi
 Now the implementation file is completeed and it should look something like this:
 ````c++
 #include "complex.h"
+#include "iostream"
 
 // <=========================== Member functions =============================================>
 
