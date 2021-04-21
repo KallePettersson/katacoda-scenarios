@@ -2,7 +2,7 @@
   "title": "CI pipeline for C++ project",
   "description": "CI workflow for C++ project using Travis CI and CxxTest for automated building and testing",
   "difficulty": "Beginner",
-  "time": "10 min",
+  "time": "15 min",
   "details": {
     "steps": [
       {
