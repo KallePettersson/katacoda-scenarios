@@ -34,6 +34,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "kalpet-env1"
+    "imageid": "ubuntu:2004"
   }
 }
