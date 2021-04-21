@@ -7,7 +7,6 @@
     "steps": [
       {
         "title": "Step 1",
-        "courseData": "initTutorial.sh",
         "text": "step1.md"
       },
       {
@@ -34,6 +33,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "ubuntu1604"
+    "imageid": "ubuntu:2004"
   }
 }
