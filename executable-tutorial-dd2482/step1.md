@@ -1,4 +1,4 @@
-# Setting up Katacoda environment and Travis CI
+# Setting up Katacoda environment
 
 
 ## Cloning repo for tutorial
