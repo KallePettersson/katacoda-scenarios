@@ -6,28 +6,25 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
-        "courseData": "initTutorial.sh",
-        "text": "step1.md"
-      },
-      {
-        "title": "Step 2",
+        "title": "Creating a simple C++ project",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Writing and running CxxTest",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Continous Integration with Travis CI",
         "text": "step4.md"
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData":"initTutorial.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "finish.md",
+      "courseData":"cleanUp.sh"
     }
   },
   "environment": {
