@@ -33,6 +33,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "katacoda-devops-env"
+    "imageid": "kalpet-devops-env"
   }
 }
