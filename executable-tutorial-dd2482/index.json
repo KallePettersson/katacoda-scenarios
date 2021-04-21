@@ -7,7 +7,7 @@
     "steps": [
       {
         "title": "Step 1",
-        "courseData": "1_installCxxTest.sh",
+        "courseData": "initTutorial.sh",
         "text": "step1.md"
       },
       {
