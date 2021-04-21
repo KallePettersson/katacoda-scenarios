@@ -231,7 +231,7 @@ int main(){
 ````
 
 And then add the following rule to the makefile:
-````makefile
+````
 main: main.cpp complex.o
 	$(CC) $(std) main.cpp -o main.out complex.o
 ````
