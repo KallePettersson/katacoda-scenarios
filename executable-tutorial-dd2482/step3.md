@@ -186,7 +186,8 @@ You can save the file and exit vim by first pressing the `esc` button, then type
 
 ## Compiling and running tests
 Now that we've defined our tests we need to compile them into an executable file using cxxtestgen so that we can execute our tests and run them. We do this by adding a new rule to our make file.
-**Note:** Remember, every line of code a rule should execute needs to start with a tab, for this tutorial this needs to be done manually for every rule added. The three executable line all needs to be tabbed in oone step. It is done correctly when some of the text is highlighted purple. 
+
+**Note:** Remember, every line of code a rule should execute needs to start with a tab, for this tutorial this needs to be done manually for every rule added. The three executable line all needs to be tabbed in codeone step. It is done correctly when some of the text is highlighted purple. 
 ````makefile
 tests: complex.cpp complexTests.cpp
 cxxtestgen --error-printer -o testrunner.cpp complexTests.cpp

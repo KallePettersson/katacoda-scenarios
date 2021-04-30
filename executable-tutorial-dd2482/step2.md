@@ -187,6 +187,7 @@ flags = -std=c++11
 ````
 
 Now lets add two rules to our makefile. The first rule will compile our Complex implementation into an object file that can be linked in to any other C++ that includes our header file and uses our Complex class. The second rule is just for cleaning up. In a make file you can reference any variable created using the `$(<name>)` syntax and to run a given rule you simply type `make complex` in the terminal.
+
 **Note:** Every line of code a rule should execute needs to start with a tab, for this tutorial this needs to be done manually for every rule added. For istance the line `$(CC) $(flags) -c complex.cpp -o complex.o` needs to be tabbed in. It is done correctly when some of the text is highlighted purple.
 ````makefile
 complex: complex.cpp
