@@ -1,0 +1,36 @@
+{
+  "title": "CI pipeline for C++ project(repeat)",
+  "description": "CI workflow for C++ project using Travis CI and CxxTest for automated building and testing",
+  "difficulty": "Beginner",
+  "time": "30 min",
+  "details": {
+    "steps": [
+      {
+        "title": "Creating a simple C++ project",
+        "text": "step2.md"
+      },
+      {
+        "title": "Writing and running CxxTest",
+        "text": "step3.md"
+      },
+      {
+        "title": "Continous Integration with Travis CI",
+        "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "courseData":"initTutorial.sh"
+    },
+    "finish": {
+      "text": "finish.md",
+      "courseData":"cleanUp.sh"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}
