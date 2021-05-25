@@ -6,16 +6,16 @@
   "details": {
     "steps": [
       {
-        "title": "Before you begin",
-        "text": "setup.md"
-      },
-      {
         "title": "Background",
         "text": "background.md"
       },
       {
+        "title": "Before you begin",
+        "text": "setup.md"
+      },
+      {
         "title": "Creating a simple C++ project",
-        "text": "step2.md"
+        "text": "createCpp.md"
       },
       {
         "title": "What is CxxTest?",
@@ -23,7 +23,7 @@
       },
       {
         "title": "Writing CxxTests",
-        "text": "step3.md"
+        "text": "creatingCxx.md"
       },
       {
         "title": "Running CxxTests",
@@ -35,7 +35,7 @@
       },
       {
         "title": "Continous Integration with Travis CI",
-        "text": "step4.md"
+        "text": "travisCI.md"
       }
     ],
     "intro": {
