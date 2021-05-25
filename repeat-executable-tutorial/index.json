@@ -28,7 +28,9 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "editor-terminal",
+    "uieditorpath": "/root/katacoda-scenarios",
+    "hideHiddenFiles": false
   },
   "backend": {
     "imageid": "ubuntu:2004"
