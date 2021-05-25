@@ -6,12 +6,32 @@
   "details": {
     "steps": [
       {
+        "title": "Before you begin",
+        "text": "setup.md"
+      },
+      {
+        "title": "Background",
+        "text": "background.md"
+      },
+      {
         "title": "Creating a simple C++ project",
         "text": "step2.md"
       },
       {
-        "title": "Writing and running CxxTest",
+        "title": "What is CxxTest?",
+        "text": "cxxintro.md"
+      },
+      {
+        "title": "Writing CxxTests",
         "text": "step3.md"
+      },
+      {
+        "title": "Running CxxTests",
+        "text": "runCxxTest.md"
+      },
+      {
+        "title": "What is Travis CI",
+        "text": "travisIntro.md"
       },
       {
         "title": "Continous Integration with Travis CI",
@@ -19,17 +39,15 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
-      "courseData":"initTutorial.sh"
+      "text": "intro.md"
     },
     "finish": {
-      "text": "finish.md",
-      "courseData":"cleanUp.sh"
+      "text": "finish.md"
     }
   },
   "environment": {
     "uilayout": "editor-terminal",
-    "uieditorpath": "/root/katacoda-scenarios",
+    "uieditorpath": "/root",
     "hideHiddenFiles": false
   },
   "backend": {
