@@ -6,16 +6,20 @@
   "details": {
     "steps": [
       {
-        "title": "Background",
-        "text": "background.md"
-      },
-      {
         "title": "Before you begin",
         "text": "setup.md"
       },
       {
-        "title": "Creating a simple C++ project",
-        "text": "createCpp.md"
+        "title": "Creating a simple C++ project - Header file",
+        "text": "header.md"
+      },
+      {
+        "title": "Creating a simple C++ project - Implementation file",
+        "text": "implementation.md"
+      },
+      {
+        "title": "Creating a simple C++ project - Makefile",
+        "text": "makefile.md"
       },
       {
         "title": "What is CxxTest?",
@@ -30,7 +34,7 @@
         "text": "runCxxTest.md"
       },
       {
-        "title": "What is Travis CI",
+        "title": "What is Travis CI?",
         "text": "travisIntro.md"
       },
       {
