@@ -12,7 +12,7 @@ In this tutorial we will look at how we implement a CI workflow for a simple C++
 7. What is Travis CI?
 8. Continous Integration with Travis CI
 
-# Usefull links for leraning more
+# Usefull links for learning more
 Through out the tutorial we will use Vim to edit the files, here is a usefull link for how Vim works: [Vim 101](https://www.linux.com/training-tutorials/vim-101-beginners-guide-vim/)
 Documentation about how to build and test C++ projects in Travis CI: [Building a C++ Project](https://docs.travis-ci.com/user/languages/cpp/)
 CxxTest official documentation: [CxxTest User Guide](http://cxxtest.com/guide.html)
