@@ -14,10 +14,10 @@ Now lets add two rules to our makefile. The first rule will compile our Complex 
 <pre class="file" data-filename="devops-executable-tutorial/src/makefile" data-target="insert" data-marker='# Compile complex'>
 # Compile complex
 complex: complex.cpp
-    $(CC) $(flags) -c complex.cpp -o complex.o
+  $(CC) $(flags) -c complex.cpp -o complex.o
 
 clear: 
-    rm -f *.out *.o
+  rm -f *.out *.o
 
 # main rule(optional)
 </pre>
@@ -31,10 +31,10 @@ flags = -std=c++11
 
 # Compile complex
 complex: complex.cpp
-    $(CC) $(flags) -c complex.cpp -o complex.o
+  $(CC) $(flags) -c complex.cpp -o complex.o
 
 clear: 
-    rm -f *.out *.o 
+  rm -f *.out *.o 
 
 # main rule(optional)
 </pre>
@@ -58,7 +58,7 @@ Now you can create `Complex` objects and play around with the code you'ce create
 <pre class="file" data-filename="devops-executable-tutorial/src/makefile" data-target="insert" data-marker='# main rule(optional)'>
 # main rule(optional)
 main: main.cpp complex.o
-    $(CC) $(std) main.cpp -o main.out complex.o
+  $(CC) $(std) main.cpp -o main.out complex.o
 </pre>
 
 
