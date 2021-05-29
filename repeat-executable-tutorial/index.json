@@ -52,7 +52,7 @@
   "environment": {
     "uilayout": "editor-terminal",
     "uieditorpath": "/root",
-    "hideHiddenFiles": false
+    "hideHiddenFiles": true
   },
   "backend": {
     "imageid": "ubuntu:2004"

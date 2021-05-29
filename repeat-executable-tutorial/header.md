@@ -1,9 +1,26 @@
 <!-- Creating a simple C++ project -->
-In this tutorial we will start of by creating a simple C++ project. We will create a small version of a class modeling **Complex** numbers `2+3i` and some functions that will allow us to perform simple operations such as addition and subtraction with complex numbers. If you already know C++ or just want to learn how to use CxxTest and integrate Travis CI you can just copy the full files from the bottom of each of the following sections into it's corresponding file and continue to the next step.
+We will start of by creating a simple C++ project. We will create a small version of a class modeling **Complex** numbers `2+3i` and some functions that will allow us to perform simple operations such as addition and subtraction with them. 
+
+If you already know C++ or just want to learn how to use CxxTest and integrate Travis CI you can just copy the full files from the bottom of each of the following sections into it's corresponding file and continue to the next step.
 
 
 ## Creating the header file
-We will start off by creating the header file for our **Complex** class. CD into the `src` folder and open the file in vim using `vim complex.h` when vim has opened press `i` to start editing the file. 
+We will start off by creating the header file for our **Complex** class. 
+
+
+<pre class="file" data-filename="src/complex.h" data-target="replace">
+// Import the supertest module and the API server
+const request = require('supertest');
+const api = require('../src/api');
+
+// Define and export three functions used to send testing requests
+// to the servers three API enpoints.
+module.exports = {
+  createTodo: (body) => request(api).post('/api/todos').send(body),
+  deleteTodo: (id) => request(api).delete(`/api/todos/${id}`),
+  getTodo: (id) => request(api).get(`/api/todos/${id}`),
+};
+</pre>
 
 <!-- Include guards -->
 Start of by adding include guards to the header file. This will prevent the compiler form including multiple version of this header file when compiling, avoiding duplicate definitions. Use this [link](https://en.wikipedia.org/wiki/Include_guard) to learn more about include guards and why they are important.
