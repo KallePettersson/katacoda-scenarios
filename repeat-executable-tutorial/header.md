@@ -9,6 +9,7 @@ We will start off by creating the header file for our **Complex** class.
 
 <!-- Include guards -->
 Start of by adding include guards to the header file. This will prevent the compiler form including multiple version of this header file when compiling, avoiding duplicate definitions. Use this [link](https://en.wikipedia.org/wiki/Include_guard) to learn more about include guards and why they are important.
+`src/complex.h`{{open}}
 
 <pre class="file" data-filename="src/complex.h" data-target="replace">
 #ifndef COMPLEX_H
