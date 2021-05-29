@@ -9,12 +9,8 @@ We will start off by creating the header file for our **Complex** class.
 
 <!-- Include guards -->
 Start of by adding include guards to the header file. This will prevent the compiler form including multiple version of this header file when compiling, avoiding duplicate definitions. Use this [link](https://en.wikipedia.org/wiki/Include_guard) to learn more about include guards and why they are important.
-```c++
-#ifndef COMPLEX_H
 
-#endif
-```
-<pre class="file" data-filename="src/complex.h" data-target="insert" data-marker=''>
+<pre class="file" data-filename="src/complex.h" data-target="replace">
 #ifndef COMPLEX_H
 // Outer class def:
 
@@ -71,7 +67,7 @@ Finally we will add the declaration of a some friendly functions. In C++ we can 
     friend Complex operator+(const Complex& lhs, const Complex& rhs);
     friend Complex operator-(const Complex& lhs, const Complex& rhs);
     friend Complex abs(const Complex& src);
-
+    
 </pre>
 
 
