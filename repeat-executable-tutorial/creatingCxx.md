@@ -28,8 +28,8 @@ Now let’s add some tests! There is not much to mention about the tests, other 
     // Tests here:
     void ASSERT_COMPLEX_EQUALS(Complex a, Complex b){
         double TOL = 1e-10;
-        TS_ASSERT_EQUALS(abs(a.real()-b.real())<TOL,1);
-        TS_ASSERT_EQUALS(abs(a.img()-b.img())<TOL,1);
+        TS_ASSERT_EQUALS(abs(a.real()-b.real()) < TOL,1);
+        TS_ASSERT_EQUALS(abs(a.img()-b.img()) < TOL,1);
     }
 
     void testDefaultConstructor () { 
@@ -114,8 +114,8 @@ class MyTestSuite : public CxxTest::TestSuite {
 
     void ASSERT_COMPLEX_EQUALS(Complex a, Complex b){
         double TOL = 1e-10;
-        TS_ASSERT_EQUALS(abs(a.real()-b.real())<TOL,1);
-        TS_ASSERT_EQUALS(abs(a.img()-b.img())<TOL,1);
+        TS_ASSERT_EQUALS(abs(a.real()-b.real()) < TOL,1);
+        TS_ASSERT_EQUALS(abs(a.img()-b.img()) < TOL,1);
     }
 
     void testDefaultConstructor () { 
@@ -188,3 +188,4 @@ class MyTestSuite : public CxxTest::TestSuite {
     }    
 
 };
+</pre>
