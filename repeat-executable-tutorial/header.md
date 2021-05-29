@@ -103,3 +103,5 @@ public:
 
 #endif
 </pre>
+
+Now that we are finnished with the header file lets continue with the implementation file!
