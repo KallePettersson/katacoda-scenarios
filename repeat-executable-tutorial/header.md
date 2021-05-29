@@ -8,7 +8,7 @@ If you already know C++ or just want to learn how to use CxxTest and integrate T
 We will start off by creating the header file for our **Complex** class. 
 
 <!-- Include guards -->
-Start of by adding include guards to the header file. This will prevent the compiler form including multiple version of this header file when compiling, avoiding duplicate definitions. Use this [link](https://en.wikipedia.org/wiki/Include_guard) to learn more about include guards and why they are important.
+Start of by adding include guards to the header file. This will prevent the compiler form including multiple version of this header file when compiling, avoiding duplicate definitions. Use this [link](https://en.wikipedia.org/wiki/Include_guard) to learn more about include guards and why they are important. Press `Copy to Editor` to add the following to `Complex.h`. If you prefer writing the code yourself you can open the file directly by clicking this `devops-executable-tutorial/src/complex.h`{{open}} and write it yourself.
 
 <pre class="file" data-filename="devops-executable-tutorial/src/complex.h" data-target="replace">
 #ifndef COMPLEX_H
@@ -31,6 +31,7 @@ public:
 };
 
 </pre>
+
 Here we define a class called **Complex** which has two private variables, `_real` and `_img` which will hold the real and imaginary parts of a complex number.
 
 <!-- Constructors -->
