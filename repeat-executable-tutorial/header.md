@@ -36,7 +36,7 @@ Here we define a class called **Complex** which has two private variables, `_rea
 <!-- Constructors -->
 Now let’s define a few constructors so that we can initialize instances of our Complex class appropriately. Add the following code under the `public:` section in the code, this is because we want the constructors to have public access so that other objects may create **Complex** instances. These constructors uses initializer lists in order to initialize the private variables, use this [link](https://en.cppreference.com/w/cpp/language/constructor) if you want to learn more about them.
 <pre class="file" data-filename="src/complex.h" data-target="insert" data-marker='// Constructors here:'>
-
+// <----------------------- Constructors --------------------------->
     Complex(): _real(0),_img(0){}
     Complex(double real): _real(real), _img(0){}
     Complex (double real, double img): _real(real), _img(img) {}
@@ -48,7 +48,7 @@ Now let’s define a few constructors so that we can initialize instances of our
 <!-- Member functions -->
 Lets add some member functions to our class. Again add them in the public scope of the class. 
 <pre class="file" data-filename="src/complex.h" data-target="insert" data-marker='// Member functions here:'>
-
+// <--------------------- member functions ------------------------->
     double & real();
     double & img();
     Complex& operator=(const Complex& comp);
@@ -63,7 +63,7 @@ In the header file we only declare the function header, the actual implementatio
 Finally we will add the declaration of a some friendly functions. In C++ we can use the keyword `friend` to give a non-member function access to private variables, this is very useful when we want to overload operators such as `+` and `-`. Again these declarations should be added in the public scope of the class.
 
 <pre class="file" data-filename="src/complex.h" data-target="insert" data-marker='// Friendly functions here:'>
-
+// <-------------------- friendly functions ------------------------>
     friend Complex operator+(const Complex& lhs, const Complex& rhs);
     friend Complex operator-(const Complex& lhs, const Complex& rhs);
     friend Complex abs(const Complex& src);
