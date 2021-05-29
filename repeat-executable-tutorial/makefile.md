@@ -42,7 +42,7 @@ rm -f *.out *.o
 
 ## Optional
 In order to test out the implementations you could create a main.cpp file and add the following code:
-<pre class="file" data-filename="devops-executable-tutorial/src/main.cpp" data-target="replace">
+<pre class="file" data-filename="devops-executable-tutorial/src/makefile" data-target="replace">
 #include <iostream>
 #include "complex.h"
 using namespace std;
@@ -53,9 +53,9 @@ int main(){
     return 0;
 }
 </pre>
+ 
+Now you can create `Complex` objects and play around with the code you'ce created. Then you can add the following rule to the makefile for compiling your code:
 
-
-And then add the following rule to the makefile:
 <pre class="file" data-filename="devops-executable-tutorial/src/main.cpp" data-target="insert" data-marker='# main rule(optional)'>
 # main rule(optional)
 main: main.cpp complex.o
@@ -63,3 +63,4 @@ $(CC) $(std) main.cpp -o main.out complex.o
 </pre>
 
 
+Finally you can execute your code by running `make main && ./main.out`{{execute}}
