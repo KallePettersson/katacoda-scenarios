@@ -1,10 +1,9 @@
 ## Writing the implementation file
-Now let’s write the code for all the functions we just created. The first thing we need to add to the implementation file is the header file, this is done using the `#include <file>` command which tells the compiler at compile time to copy and paste the content of the `<file>` into the file where `#include <file>` was used. The iostream has an abs function defined in it that we will use later. So add the following code to the top of the `Complex.cpp` file. You can use the `Copy to Editor` button or write it yourself by clicking `devops-executable-tutorial/src/complex.h`{{open}}.
+Now let’s write the code for all the functions we just created. The first thing we need to add to the implementation file is the header file, this is done using the `#include <file>` command which tells the compiler at compile time to copy and paste the content of the `<file>` into the file where `#include <file>` was used. The iostream has an abs function defined in it that we will use later. So add the following code to the top of the `Complex.cpp` file. You can use the `Copy to Editor` button or write it yourself by clicking `devops-executable-tutorial/src/complex.cpp`{{open}}.
 
 
 <pre class="file" data-filename="devops-executable-tutorial/src/complex.cpp" data-target="replace">
 #include "complex.h"
-#include "iostream"
 // <=========================== Member functions =============================================>
 
 // Override =
@@ -79,7 +78,6 @@ There are different ways of overloading these operators but doing it this way wi
 Now the implementation file is completed and it should look something like this:
 <pre class="file" data-filename="devops-executable-tutorial/src/complex.cpp" data-target="replace" >
 #include "complex.h"
-#include "iostream"
 
 // <=========================== Member functions =============================================>
 
@@ -118,4 +116,4 @@ Complex abs(const Complex& src){
 }
 </pre>
 
-Now the implementation file is compleated, lets continue by creating a Makefile!
+Lets continue by creating a Makefile!
