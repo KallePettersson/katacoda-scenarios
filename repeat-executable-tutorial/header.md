@@ -9,7 +9,6 @@ We will start off by creating the header file for our **Complex** class.
 
 <!-- Include guards -->
 Start of by adding include guards to the header file. This will prevent the compiler form including multiple version of this header file when compiling, avoiding duplicate definitions. Use this [link](https://en.wikipedia.org/wiki/Include_guard) to learn more about include guards and why they are important.
-`devops-executable-tutorial/src/complex.h`{{open}}
 
 <pre class="file" data-filename="devops-executable-tutorial/src/complex.h" data-target="replace">
 #ifndef COMPLEX_H
@@ -21,7 +20,7 @@ Start of by adding include guards to the header file. This will prevent the comp
 <!-- Outer class definiton -->
 Now lets define our class, between the guards from the previous section add the following code: 
 
-<pre class="file" data-filename="src/complex.h" data-target="insert" data-marker='// Outer class def:'>
+<pre class="file" data-filename="devops-executable-tutorial/src/complex.h" data-target="insert" data-marker='// Outer class def:'>
 
 class Complex {
 private:
@@ -36,7 +35,7 @@ Here we define a class called **Complex** which has two private variables, `_rea
 
 <!-- Constructors -->
 Now let’s define a few constructors so that we can initialize instances of our Complex class appropriately. Add the following code under the `public:` section in the code, this is because we want the constructors to have public access so that other objects may create **Complex** instances. These constructors uses initializer lists in order to initialize the private variables, use this [link](https://en.cppreference.com/w/cpp/language/constructor) if you want to learn more about them.
-<pre class="file" data-filename="src/complex.h" data-target="insert" data-marker='// Constructors here:'>
+<pre class="file" data-filename="devops-executable-tutorial/src/complex.h" data-target="insert" data-marker='// Constructors here:'>
 // <----------------------- Constructors --------------------------->
     Complex(): _real(0),_img(0){}
     Complex(double real): _real(real), _img(0){}
@@ -48,7 +47,7 @@ Now let’s define a few constructors so that we can initialize instances of our
 
 <!-- Member functions -->
 Lets add some member functions to our class. Again add them in the public scope of the class. 
-<pre class="file" data-filename="src/complex.h" data-target="insert" data-marker='// Member functions here:'>
+<pre class="file" data-filename="devops-executable-tutorial/src/complex.h" data-target="insert" data-marker='// Member functions here:'>
 // <--------------------- member functions ------------------------->
     double & real();
     double & img();
@@ -63,7 +62,7 @@ In the header file we only declare the function header, the actual implementatio
 <!-- Friendly functions -->
 Finally we will add the declaration of a some friendly functions. In C++ we can use the keyword `friend` to give a non-member function access to private variables, this is very useful when we want to overload operators such as `+` and `-`. Again these declarations should be added in the public scope of the class.
 
-<pre class="file" data-filename="src/complex.h" data-target="insert" data-marker='// Friendly functions here:'>
+<pre class="file" data-filename="devops-executable-tutorial/src/complex.h" data-target="insert" data-marker='// Friendly functions here:'>
 // <-------------------- friendly functions ------------------------>
     friend Complex operator+(const Complex& lhs, const Complex& rhs);
     friend Complex operator-(const Complex& lhs, const Complex& rhs);
@@ -75,7 +74,7 @@ Finally we will add the declaration of a some friendly functions. In C++ we can 
 <!-- Final look of header file -->
 Now the header file is completed and it should look something like this:
 
-<pre class="file" data-filename="src/complex.h" data-target="replace">
+<pre class="file" data-filename="devops-executable-tutorial/src/complex.h" data-target="replace">
 #ifndef COMPLEX_H
 class Complex {
 private:
