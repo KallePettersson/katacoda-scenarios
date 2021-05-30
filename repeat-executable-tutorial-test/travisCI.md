@@ -65,23 +65,25 @@ First we can add all our changes to our commit by running: <br/>
 Then we can commit our changes by running: <br/>
 `git commit -am"Done with the tutorial!"`{{execute}}<br/>
 
-**Note:** Commiting from the terminal will trigger an git error where git wants to know who you are and you need to provide your email and name. You can copy and paste this in your terminal to fix this(remember to put in your email and name).
+**Note:** Commiting from the terminal will trigger an git error where git wants to know who you are and you need to provide your email and name. 
+![Git Error](https://github.com/KallePettersson/katacoda-scenarios/blob/main/repeat-executable-tutorial/assets/Github-error.JPG?raw=true)
+You can copy and paste this in your terminal to fix this(remember to put in your email and name).
 `git config --global user.email "you@example.com"`{{copy}}<br/>
 `git config --global user.name "Your Name"`{{copy}}<br/>
 
-Now you can rerun the commit command above.<br/> 
-
-
-And finally we can push our changes by running:<br/>
+Now you can rerun the commit command above. And finally we can push our changes by running:<br/>
 `git push`{{execute}}<br/>
 
 Now go to the fork in your browser and change branch to `tutorial-start` and see how travis is building. It should look like this:
-
+![Github travis running](https://github.com/KallePettersson/katacoda-scenarios/blob/main/repeat-executable-tutorial/assets/github-travis-running.JPG?raw=true)
 
 When Travis is done building and testing the project it will look something like this:
+![github travis details](https://github.com/KallePettersson/katacoda-scenarios/blob/main/repeat-executable-tutorial/assets/github-travis-details?raw=true)
 
 
-You can also view the build directly in your dashboard at Travis or you can get a more detailed view in github by clicking the checkmark and then clicking `More Details` and it will take you to a view that looks something like this:
+You can also view the build directly in your dashboard at Travis or you can get a more detailed view in github by clicking the checkmark and then clicking `Details` and it will take you to a view that looks something like this:
+![Github travis details view](https://github.com/KallePettersson/katacoda-scenarios/blob/main/repeat-executable-tutorial/assets/github-travis-details-viwe.JPG?raw=true)
+![Travis CI dashboard](https://github.com/KallePettersson/katacoda-scenarios/blob/main/repeat-executable-tutorial/assets/travis-dashboard.JPG?raw=true)
  
  
 # Easter egg
