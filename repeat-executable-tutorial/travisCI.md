@@ -42,3 +42,7 @@ script:
 ## Triggering builds and tests
 If you want to try and trigger a build you can commit your changes and push them to GitHub. When you try and run `git push` you will be asked to setup your identity, follow the instructions in the output and set the `user.email` and `user.name` appropriately. Then when you run `git push` again you will have to specify the username and password of your personal GitHub account in order to push to the repo. After pushing the changes you can visit the [repo](https://github.com/KallePettersson/devops-executable-tutorial/tree/tutorial-start) in the browser and watch as Travis builds and tests the project.
 
+
+# Easter egg
+Before we end this turotial, did you find the Ester egg? If not you can view it by executing this command!
+`cat /root/devops-executable-tutorial/.start/39/38/37/11/24/18/35/26/10/easteregg.txt`{{execute}}
