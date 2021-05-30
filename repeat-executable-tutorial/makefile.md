@@ -1,5 +1,5 @@
 ## Creating the MakeFile 
-Now for the final part of the implementation of the C++ project lets create the make file. Open the make file in vim using `vim makefile` when vim has opened press `i` to start editing the file. First lets define some variables to make writing the makefile more straight forward. You can use the `Copy to Editor` button or write it yourself by clicking `devops-executable-tutorial/src/makefile`{{open}}.
+Now for the final part of the implementation of the C++ project lets create the make file. Open the make file in vim using `vim makefile` when vim has opened press `i` to start editing the file. First lets define some variables to make writing the makefile more straight forward. You can use the `Copy to Editor` button or write it yourself by clicking: `devops-executable-tutorial/src/makefile`{{open}}.
 
 **Note:** In the makefile, every line of code a rule should execute needs to start with a tab, for this tutorial this needs to be done manually for every rule added. For instance the line `$(CC) $(flags) -c complex.cpp -o complex.o` needs to be tabbed in. **This can not be done in the UI** and is easiest done in the end of this step by using vim. In the terminal type `vim makefile`{{execute}} when vim has opened press `i` to start editing the file(Tab in each rule). This is done correctly when some of rule is highlighted purple. When you are done tabbing in all the rules you can save the file and exit vim by first pressing the `esc` button, then type `:wq` and press `enter`.(This seems to be caused by a katacode error in interperting tabs correctly for makefiles)
 
@@ -21,6 +21,8 @@ clear:
 rm -f *.out *.o
 
 # main rule(optional)
+
+# Future test rule
 </pre>
 
 
@@ -38,6 +40,8 @@ clear:
 rm -f *.out *.o 
 
 # main rule(optional)
+
+# Future test rule
 
 </pre>
 
