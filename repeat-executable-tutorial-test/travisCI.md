@@ -82,7 +82,7 @@ When Travis is done building and testing the project it will look something like
 
 
 You can also view the build directly in your dashboard at Travis or you can get a more detailed view in github by clicking the checkmark and then clicking `Details` and it will take you to a view that looks something like this:
-![Github travis details view](https://github.com/KallePettersson/katacoda-scenarios/blob/main/repeat-executable-tutorial/assets/github-travis-details-viwe.JPG?raw=true)
+![Github travis details view](https://github.com/KallePettersson/katacoda-scenarios/blob/main/repeat-executable-tutorial/assets/github-travis-details-view.JPG?raw=true)
 ![Travis CI dashboard](https://github.com/KallePettersson/katacoda-scenarios/blob/main/repeat-executable-tutorial/assets/travis-dashboard.JPG?raw=true)
  
  
