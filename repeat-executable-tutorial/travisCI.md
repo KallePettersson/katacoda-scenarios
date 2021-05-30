@@ -39,6 +39,25 @@ script:
 </pre>
 
 
+Now the yaml file is completed and it should look something like this:
+<pre class="file" data-filename="devops-executable-tutorial/.travis.yml" data-target="replace">
+dist: trusty
+sudo: false
+language: cpp
+
+# Commands here:
+script: 
+  - echo "Installing cxxtest"
+  - sudo apt-get install -y cxxtest
+  - echo "Moving to src directory"
+  - cd src
+  - echo "Building project (Compile object file)"
+  - make complex
+  - echo "Running tests"
+  - make tests
+  - ./simple_test.out
+</pre>
+
 ## Triggering builds and tests
 If you want to try and trigger a build you can commit your changes and push them to GitHub. When you try and run `git push` you will be asked to setup your identity, follow the instructions in the output and set the `user.email` and `user.name` appropriately. Then when you run `git push` again you will have to specify the username and password of your personal GitHub account in order to push to the repo. After pushing the changes you can visit the [repo](https://github.com/KallePettersson/devops-executable-tutorial/tree/tutorial-start) in the browser and watch as Travis builds and tests the project.
 
