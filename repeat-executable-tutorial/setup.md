@@ -6,6 +6,8 @@ to install `CxxTest`. This can be done by clicking on the following commands or 
 `apt-get update -y`{{execute}} <br/>
 `apt-get install -y cxxtest`{{execute}}
  
+You can test that the installation was successfull by running:
+`cxxtestgen --v`{{execute}}
 # Forking the tutorial repo
 Now that we've installed `CxxTest` we need to clone the tutorial repo we will work with during this tutorial. Start of by forking the repo. You fork the repo by clicking this [link](https://github.com/KallePettersson/devops-executable-tutorial/tree/main) and then pressing the button right under your profile picture saying "fork".
 
