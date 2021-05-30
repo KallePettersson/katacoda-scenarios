@@ -1,5 +1,5 @@
 <!-- Creating a simple C++ project -->
-We will start of by creating a simple C++ project. We will create a small version of a class modeling **Complex** numbers `2+3i` and some functions that will allow us to perform simple operations such as addition and subtraction with them.
+We will start of by creating a simple C++ project. We will create a small version of a class modeling **Complex** numbers i.e. `2+3i` and some functions that will allow us to perform simple operations such as addition and subtraction with them.
  
 If you already know C++ or just want to learn how to use CxxTest and integrate Travis CI you can just copy the full files from the bottom of each of the following sections into its corresponding file and continue to the next step.
  
@@ -8,7 +8,7 @@ If you already know C++ or just want to learn how to use CxxTest and integrate T
 We will start off by creating the header file for our **Complex** class.
  
 <!-- Include guards -->
-Start of by adding include guards to the header file. This will prevent the compiler form including multiple version of this header file when compiling, avoiding duplicate definitions. Use this [link](https://en.wikipedia.org/wiki/Include_guard) to learn more about include guards and why they are important. Press `Copy to Editor` to add the following to `Complex.h`. If you prefer writing the code yourself you can open the file directly and edit it directly by clicking this: `devops-executable-tutorial/src/complex.h`{{open}}
+Start of by adding include guards to the header file. This will prevent the compiler from including multiple version of this header file when compiling, avoiding duplicate definitions. Use this [link](https://en.wikipedia.org/wiki/Include_guard) to learn more about include guards and why they are important. Press `Copy to Editor` to add the following to `Complex.h`. If you prefer writing the code yourself you can open the file directly and edit it yourself by clicking this: `devops-executable-tutorial/src/complex.h`{{open}}
  
 <pre class="file" data-filename="devops-executable-tutorial/src/complex.h" data-target="replace">
 #ifndef COMPLEX_H

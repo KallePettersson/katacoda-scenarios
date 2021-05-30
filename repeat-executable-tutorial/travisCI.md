@@ -1,6 +1,5 @@
 <!-- Continuous Integration with Travis CI -->
 Now that we can both build our project by running `make complex` and test our project using `make tests && ./simple_test.out` locally. Now we want to integrate Travis CI into our project so that every time we make changes to our code the project will be built and tested. 
-`make tests && ./simple_test.out`{{execute}}
  
 ## Creating and enabling a Travis CI account
 Before we integrate Travis CI into our project we need to create an account and give that account access to our repository. Travis CI works by connecting itself to the repo via a webhook. A webhook that will be triggered every time something is pushed to the repo, thus triggering the `.travis.yaml` file and building and testing our project. **Note** that this step is not needed for this tutorial, since Travis is already connected to the repo but if you want to connect your own repos to Travis the following step is needed.
@@ -22,7 +21,7 @@ language: cpp
  
 The `dist:trusty` tell Travis that we want to run everything in an up to date ubuntu environment, the `sudo: false` tell Travis that we don't need sudo privileges in our shell and the `language: cpp` tells Travis that we have a cpp project.
  
-Now let’s create the script that will run each time Travis is triggered. This will execute like a shell script that first installs CxxTest, moves to the source folder, builds the project and finally tests it. The script uses our previously defined make rules to both build our project and compile our tests.
+Now let’s create the script that will run each time Travis is triggered. This will execute like a shell script that first installs CxxTest, moves to the source folder, builds the project and finally tests it. The script uses our previously defined make rules to both build our project and compile and run our tests.
  
 <pre class="file" data-filename="devops-executable-tutorial/.travis.yml" data-target="insert" data-marker='# Commands here:'>
 # Commands here:

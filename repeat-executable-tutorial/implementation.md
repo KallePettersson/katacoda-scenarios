@@ -1,5 +1,5 @@
 ## Writing the implementation file
-Now let’s write the code for all the functions we just created. The first thing we need to add to the implementation file is the header file, this is done using the `#include <file>` command which tells the compiler at compile time to copy and paste the content of the `<file>` into the file where `#include <file>` was used. The iostream has an abs function defined in it that we will use later. So add the following code to the top of the `Complex.cpp` file. You can use the `Copy to Editor` button or write it yourself by clicking: `devops-executable-tutorial/src/complex.cpp`{{open}}.
+Now let’s write the code for all the functions we just defined. The first thing we need to add to the implementation file is the header file, this is done using the `#include <file>` command which tells the compiler at compile time to copy and paste the content of the `<file>` into the file where `#include <file>` was used. So add the following code to the top of the `Complex.cpp` file. You can use the `Copy to Editor` button or write it yourself by clicking: `devops-executable-tutorial/src/complex.cpp`{{open}}.
  
  
 <pre class="file" data-filename="devops-executable-tutorial/src/complex.cpp" data-target="replace">
@@ -65,15 +65,18 @@ Complex operator-(const Complex& lhs, const Complex& rhs){
  return Complex(lhs._real - rhs._real,lhs._img - rhs._img);
 }
  
-// Uses the standard abs method which takes a long long as input
+// Returns the abs of a Complex number
 Complex abs(const Complex& src){
- return Complex(abs((long long)src._real),abs((long long)src._img));
+  double new_real,new_img;
+  new_real = src._real < 0 ? (src._real * -1) : src_real;
+  new_img = src._img < 0 ? (src._img * -1) : src_img; 
+ return Complex(new_real,new_img);
 }
  
 </pre>
  
  
-There are different ways of overloading these operators but doing it this way will allow us to chain multiple uses of the operator. `Complex a = b + c + d +... `. When we execute do this each the compiler will interpret it as `a = ((b + c) + d)` and since the operator+ return a new complex object the chaining is possible. In the `abs` function we use the built in abs function to convert each variable separately and create a new Complex object which we then return.
+There are different ways of overloading these operators but doing it this way will allow us to chain multiple uses of the operator. `Complex a = b + c + d +... `. When we execute this the compiler will interpret it as `a = ((b + c) + d)` and since the operator+ return a new complex object the chaining is possible. In the `abs` function we convert each variable separately and create a new Complex object which we then return.
  
 Now the implementation file is completed and it should look something like this:
 <pre class="file" data-filename="devops-executable-tutorial/src/complex.cpp" data-target="replace" >
@@ -110,9 +113,12 @@ Complex operator-(const Complex& lhs, const Complex& rhs){
  return Complex(lhs._real - rhs._real,lhs._img - rhs._img);
 }
  
-// Uses the standard abs method which takes a long long as input
+// Returns the abs of a Complex number
 Complex abs(const Complex& src){
- return Complex(abs((long long)src._real),abs((long long)src._img));
+  double new_real,new_img;
+  new_real = src._real < 0 ? (src._real * -1) : src_real;
+  new_img = src._img < 0 ? (src._img * -1) : src_img; 
+ return Complex(new_real,new_img);
 }
 </pre>
  
