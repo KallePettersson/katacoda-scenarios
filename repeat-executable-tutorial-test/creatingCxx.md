@@ -5,12 +5,12 @@ Now that we have finished the C++ project step we will in this step use CxxTest 
 We will start off by creating the test file where we will define our tests. First we need to include the two relevant header files at the top of our file. The first header file allows us to use CxxTest to define our tests and the second one allows us to work with our **Complex** class. You can use the `Copy to Editor` button or write it yourself by clicking: `devops-executable-tutorial/src/complexTests.cpp`{{open}}
 
 <pre class="file" data-filename="devops-executable-tutorial/src/complexTests.cpp" data-target="replace">
-#include < cxxtest/TestSuite.h >
+#include // Insert cxx import here
 #include "complex.h"
 
 // Test class
 </pre>
-
+**Note**: The first `#inlcude` statement for `#include <cxxtest/TestSuite.h>`, this has to be done manually since katacoda can't escape the `<` character :)
 
 Now lets define the test suite class which will contain our tests. The class we create will extend the test suite built into CxxTest and any public void function where the name starts with "test" defined within it will be executed as a unit test later when we run our tests.
 
@@ -104,7 +104,7 @@ Now let’s add some tests! There is not much to mention about the tests, other 
 
 Now the test file is completed and it should look something like this:
 <pre class="file" data-filename="devops-executable-tutorial/src/complexTests.cpp" data-target="replace">
-#include \<cxxtest/TestSuite.h\\>
+#include // Insert cxx import here
 #include "complex.h"
 
 // Test class
@@ -189,5 +189,6 @@ class MyTestSuite : public CxxTest::TestSuite {
 
 };
 </pre>
+**Note**: Remember to change the first `#inlcude` statement for `#include <cxxtest/TestSuite.h>`, this has to be done manually since katacoda can't escape the `<` character :)
 
 Now lets continue by learning how we compile and run our test code locally!
