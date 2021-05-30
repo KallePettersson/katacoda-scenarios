@@ -104,7 +104,7 @@ Now let’s add some tests! There is not much to mention about the tests, other 
 
 Now the test file is completed and it should look something like this:
 <pre class="file" data-filename="devops-executable-tutorial/src/complexTests.cpp" data-target="replace">
-#include \\<cxxtest/TestSuite.h\\>
+#include \<cxxtest/TestSuite.h\>
 #include "complex.h"
 
 // Test class
