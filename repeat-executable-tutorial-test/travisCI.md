@@ -78,7 +78,7 @@ Now go to the fork in your browser and change branch to `tutorial-start` and see
 ![Github travis running](https://github.com/KallePettersson/katacoda-scenarios/blob/main/repeat-executable-tutorial/assets/github-travis-running.JPG?raw=true)
 
 When Travis is done building and testing the project it will look something like this:
-![github travis details](https://github.com/KallePettersson/katacoda-scenarios/blob/main/repeat-executable-tutorial/assets/github-travis-details?raw=true)
+![github travis details](https://github.com/KallePettersson/katacoda-scenarios/blob/main/repeat-executable-tutorial/assets/github-travis-details.JPG?raw=true)
 
 
 You can also view the build directly in your dashboard at Travis or you can get a more detailed view in github by clicking the checkmark and then clicking `Details` and it will take you to a view that looks something like this:
