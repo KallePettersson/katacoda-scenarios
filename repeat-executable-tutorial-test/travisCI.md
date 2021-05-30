@@ -2,7 +2,7 @@
 Now that we can both build our project by running `make complex` and test our project using `make tests && ./simple_test.out` locally. Now we want to integrate Travis CI into our project so that every time we make changes to our code the project will be built and tested. 
  
 ## Creating and enabling a Travis CI account
-Before we integrate Travis CI into our project we need to create an account and give that account access to our repository. Travis CI works by connecting itself to the repo via a webhook. A webhook that will be triggered every time something is pushed to the repo, thus triggering the `.travis.yaml` file and building and testing our project.
+Before we integrate Travis CI into our project we need to create an account and give that account access to our repository.
  
 To create an account go to Travis home [page](https://www.travis-ci.com) and click on `sign up`. This will direct you to a sign up page where you can choose how to sign up for Travis, here you want to choose `sign up with github`. This will take you to a GitHub page where you have to log in to GitHub and verify that you want to sign up for Travis CI. Now you can either give Travis access to all you repos by clicking `Activate all repositories` button or you could go back to Travis and click on your profile picture in the top right of your Travis Dashboard, click Settings and then the green Activate button, and select the repositories you want to use with Travis CI. If there are any issues with this, here is a link to the official [get started guide](https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci-using-github). 
  
@@ -63,11 +63,14 @@ First we can add all our changes to our commit by running: <br/>
 `git add *`{{execute}} <br/>
 
 Then we can commit our changes by running: <br/>
-`git commit -am"Done with the tutorial!`{{execute}}<br/>
+`git commit -am"Done with the tutorial!"`{{execute}}<br/>
 
 **Note:** Commiting from the terminal will trigger an git error where git wants to know who you are and you need to provide your email and name. You can copy and paste this in your terminal to fix this(remember to put in your email and name).
-`git config --global user.email "you@example.com`{{copy}}<br/>
-`git config --global user.name "Your Name`{{copy}}<br/>
+`git config --global user.email "you@example.com"`{{copy}}<br/>
+`git config --global user.name "Your Name"`{{copy}}<br/>
+
+Now you can rerun the commit command above.<br/> 
+
 
 And finally we can push our changes by running:<br/>
 `git push`{{execute}}<br/>
