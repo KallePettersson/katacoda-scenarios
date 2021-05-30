@@ -12,7 +12,7 @@ Now that we've installed `CxxTest` we need to clone the tutorial repo we will wo
 # Cloning the forked repo
 After you've forked the repo you need to clone it. From you fork press `Code`, select `HTTPS` and copy the link.
 Then run the following command in your terminal: <br/>
-`git clone <your clone link here`
+`git clone <your clone link here` <br/>
 After the repo has been cloned we can move into the repo using:<br/>
 `cd devops-executable-tutorial/src`{{execute}}<br/>
 Finally we need to switch to the right branch:

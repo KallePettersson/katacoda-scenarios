@@ -68,8 +68,8 @@ Complex operator-(const Complex& lhs, const Complex& rhs){
 // Returns the abs of a Complex number
 Complex abs(const Complex& src){
   double new_real,new_img;
-  new_real = src._real < 0 ? (src._real * -1) : src_real;
-  new_img = src._img < 0 ? (src._img * -1) : src_img; 
+  new_real = src._real < 0 ? (src._real * -1) : src._real;
+  new_img = src._img < 0 ? (src._img * -1) : src._img; 
  return Complex(new_real,new_img);
 }
  
@@ -116,8 +116,8 @@ Complex operator-(const Complex& lhs, const Complex& rhs){
 // Returns the abs of a Complex number
 Complex abs(const Complex& src){
   double new_real,new_img;
-  new_real = src._real < 0 ? (src._real * -1) : src_real;
-  new_img = src._img < 0 ? (src._img * -1) : src_img; 
+  new_real = src._real < 0 ? (src._real * -1) : src._real;
+  new_img = src._img < 0 ? (src._img * -1) : src._img; 
  return Complex(new_real,new_img);
 }
 </pre>
