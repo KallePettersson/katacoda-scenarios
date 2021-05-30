@@ -10,6 +10,8 @@ We will start off by creating the test file where we will define our tests. Firs
 
 // Test class
 </pre>
+
+
 **Note**: The first `#inlcude` statement for `#include <cxxtest/TestSuite.h>`, this has to be done manually since katacoda can't escape the `<` character :)
 
 Now lets define the test suite class which will contain our tests. The class we create will extend the test suite built into CxxTest and any public void function where the name starts with "test" defined within it will be executed as a unit test later when we run our tests.
@@ -189,6 +191,8 @@ class MyTestSuite : public CxxTest::TestSuite {
 
 };
 </pre>
+
+
 **Note**: Remember to change the first `#inlcude` statement for `#include <cxxtest/TestSuite.h>`, this has to be done manually since katacoda can't escape the `<` character :)
 
 Now lets continue by learning how we compile and run our test code locally!
