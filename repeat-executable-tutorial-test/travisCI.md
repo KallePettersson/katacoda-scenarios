@@ -82,7 +82,7 @@ You can also view the build directly in your dashboard at Travis or you can get 
  
  
 # Easter egg
-Before we end this tutorial, did you find the Ester egg? If not you can view it by executing this command!
+Before we end this tutorial, did you find the Ester egg? If you did'nt you can view it by executing this command!
 `cat /root/devops-executable-tutorial/.start/39/38/37/11/24/18/35/26/10/easteregg.txt`{{execute}}
  
 
