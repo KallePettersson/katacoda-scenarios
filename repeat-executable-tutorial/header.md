@@ -1,7 +1,7 @@
 <!-- Creating a simple C++ project -->
 We will start of by creating a simple C++ project. We will create a small version of a class modeling **Complex** numbers i.e. `2+3i` and some functions that will allow us to perform simple operations such as addition and subtraction with them.
  
-If you already know C++ or just want to learn how to use CxxTest and integrate Travis CI you can just copy the full files from the bottom of each of the following sections into its corresponding file and continue to the next step.
+If you already know C++ or just want to learn how to use CxxTest and integrate Travis CI you can just copy the full files from the bottom of each of the following sections into its corresponding file and continue to the next steps.
  
  
 ## Creating the header file

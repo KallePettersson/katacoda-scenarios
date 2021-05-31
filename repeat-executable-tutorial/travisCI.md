@@ -1,5 +1,5 @@
 <!-- Continuous Integration with Travis CI -->
-Now that we can both build our project by running `make complex` and test our project using `make tests && ./simple_test.out` locally. Now we want to integrate Travis CI into our project so that every time we make changes to our code the project will be built and tested. 
+Now that we can both build our project by running `make complex` and test our project using `make tests && ./simple_test.out` locally. We now want to integrate Travis CI into our project so that every time we make changes to our code the project will be built and tested. 
  
 ## Creating and enabling a Travis CI account
 Before we integrate Travis CI into our project we need to create an account and give that account access to our repository.

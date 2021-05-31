@@ -25,7 +25,7 @@ Complex& Complex::operator= (Complex const& src) {
 </pre>
  
  
-The `Complex&` part species that this function will return a Complex **by reference** which means that this function will return an actual object and not a copy of an object. The `Complex::operator=` tells the compiler the we want to overload the `=`operator in the `Complex` scope and the `Complex const& src` means that we pass the argument by reference and we also promise that the content of the src variable will remain the same after executing the function. When we want to use the function we can for instance write `Complex a = Complex(2,3)`, this is then converted into `a.operator=(Complex(2,3))` which means that we copy the content of the Complex object we pass via the source parameter into the private variables of `a`.
+The `Complex&` part species that this function will return a Complex **by reference** which means that this function will return the actual object and not a copy of the object. The `Complex::operator=` tells the compiler the we want to overload the `=`operator in the `Complex` scope and the `Complex const& src` means that we pass the argument by reference and we also promise that the content of the src variable will remain the same after executing the function. When we want to use the function we can for instance write `Complex a = Complex(2,3)`, this is then converted into `a.operator=(Complex(2,3))` which means that we copy the content of the Complex object we pass via the source parameter into the private variables of `a`.
  
 Now lets define the getter functions:
  
@@ -76,7 +76,7 @@ Complex abs(const Complex& src){
 </pre>
  
  
-There are different ways of overloading these operators but doing it this way will allow us to chain multiple uses of the operator. `Complex a = b + c + d +... `. When we execute this the compiler will interpret it as `a = ((b + c) + d)` and since the operator+ return a new complex object the chaining is possible. In the `abs` function we convert each variable separately and create a new Complex object which we then return.
+There are different ways of overloading these operators but doing it this way will allow us to chain multiple uses of the operator. With this approach when executing the expression `Complex a = b + c + d +... ` the compiler will interpret it as `a = ((b + c) + d)` and since the operator+ returns a new complex object the chaining is possible. In the `abs` function we convert each variable separately and create a new Complex object which we then return.
  
 Now the implementation file is completed and it should look something like this:
 <pre class="file" data-filename="devops-executable-tutorial/src/complex.cpp" data-target="replace" >

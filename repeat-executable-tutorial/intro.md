@@ -1,9 +1,9 @@
 Continuous integration or CI is the practice of smoothly and automatically integrating source code and features in your project from multiple contributors into a single project repository. For CI to work properly there is a need make sure that all the code merged into the central repo is correct. To achieve this we can use automated testing and building.
  
-In this tutorial we will look at how we implement a CI pipeline for a simple C++ projects. We will do this by using the `CxxTest` test framework and the CI platform `Travis CI` to create unit tests and integrate them into an automated testing pipeline. In the process we will learn some fundamentals about C++ programming, how unit tests are written using the `CxxTest` framework and how we can create a CI pipeline with `Travis CI`.
+In this tutorial we will look at how we implement a CI pipeline for simple C++ projects. We will do this by using the `CxxTest` test-framework and the CI platform `Travis CI` to create unit tests and integrate them into an automated testing pipeline. In the process we will learn some fundamentals about C++ programming, how unit tests are written using the `CxxTest` framework and how we can create a CI pipeline with `Travis CI`.
  
 # Tutorial outline
-1. Before you start
+1. Before you begin
 2. Creating a simple C++ project
 3. What is CxxTest?
 4. Writing CxxTests
