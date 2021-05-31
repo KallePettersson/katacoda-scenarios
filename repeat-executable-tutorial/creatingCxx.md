@@ -199,6 +199,6 @@ class MyTestSuite : public CxxTest::TestSuite {
 </pre>
 
 
-**Note**: The first `#include` statement can't be pasted using the `Copy to Editor`, since katacoda can't escape the `<` character. This has to be done manually, so remove the comment and add `#include <cxxtest/TestSuite.h>` instead!
+**Note**: The first `#include` statement can't be pasted using the `Copy to Editor`, since katacoda can't escape the `<` character. This has to be done manually, so remove the comment and add `#include <cxxtest/TestSuite.h>`{{copy}} instead!
 
 Now lets continue by learning how we compile and run our test code locally!
