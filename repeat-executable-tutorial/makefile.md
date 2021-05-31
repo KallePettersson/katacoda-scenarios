@@ -44,9 +44,8 @@ rm -f *.out *.o
 </pre>
  
 
-**Note:** In the makefile, every line of code where a rule should execute needs to start with a tab. For this tutorial this needs to be done manually for every rule added. For instance the line `$(CC) $(flags) -c complex.cpp -o complex.o` needs to be tabbed in. **This can not be done in the UI** and is easiest done in the end of this step by using vim. In the terminal type `vim makefile`{{execute}} when vim has opened press `i` to start editing the file(Tab in each rule). This is done correctly when the rule is highlighted purple. When you are done tabbing in all the rules you can save the file and exit vim by first pressing the `esc` button, then type `:wq` and press `enter`.(Sorry for the inconvenience, this seems to be caused by a katacode error in interpreting tabs correctly for makefiles)
  
-## Optional
+<!-- ## Optional
 In order to test out the implementations you've created thus far you could create a main.cpp file and add the following code.
 <pre class="file" data-filename="devops-executable-tutorial/src/main.cpp" data-target="replace">
 #include "complex.h"
@@ -67,6 +66,9 @@ $(CC) $(flags) main.cpp -o main.out complex.o
 </pre>
  
  
-Finally you can execute your code by running `make main && ./main.out`{{execute}}
+Finally you can execute your code by running `make main && ./main.out`{{execute}} -->
  
-**Reminder:** In the makefile, every line of code where a rule should execute needs to start with a tab, for this tutorial this needs to be done manually for every rule added. For instance the line `$(CC) $(flags) -c complex.cpp -o complex.o` needs to be tabbed in. **This can not be done in the UI** and is easiest done in the end of this step by using vim. In the terminal type `vim makefile`{{execute}} when vim has opened press `i` to start editing the file(Tab in each rule). This is done correctly when the rule is highlighted purple. When you are done tabbing in all the rules you can save the file and exit vim by first pressing the `esc` button, then type `:wq` and press `enter`.(Sorry for the inconvenience, this seems to be caused by a katacode error in interpreting tabs correctly for makefiles)
+**Note:** In the makefile, every line of code where a rule should execute needs to start with a tab. For this tutorial this needs to be done manually for every rule added. For instance the line `$(CC) $(flags) -c complex.cpp -o complex.o` needs to be tabbed in. **This can not be done in the UI** and is easiest done in the end of this step by using vim. In the terminal type `vim makefile`{{execute}} when vim has opened press `i` to start editing the file(Tab in each rule). This is done correctly when the rule is highlighted purple. When you are done tabbing in all the rules you can save the file and exit vim by first pressing the `esc` button, then type `:wq` and press `enter`.(Sorry for the inconvenience, this seems to be caused by a katacode error in interpreting tabs correctly for makefiles)
+
+The makefile should look like this in vim when its correct:
+
